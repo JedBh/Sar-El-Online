@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
         left={0}
         w={'100%'}
         transition={'all 0.4s ease'}
-        bg={scrollPosition > 1 ? 'blue.500' : 'transparent'}
+        bg={scrollPosition > 1 ? 'blue.900' : 'transparent'}
         boxShadow={scrollPosition > 1 ? '2xl' : '""'}
         zIndex={999}
         pb={scrollPosition > 1 ? [3, null, 4, null, 5] : [6, 7, 8, 9, 10]}
