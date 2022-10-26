@@ -3,6 +3,7 @@ import { ThemeComponents } from '@chakra-ui/react'
 const Text: ThemeComponents['Text'] = {
   baseStyle: {
     m: 0,
+    lineHeight: 1.6,
   },
   variants: {
     primary: {

@@ -19,15 +19,15 @@ const TextWithCta: React.FC = () => {
         <Flex justifyContent={'center'}>
           <Box m={22} p={8} pos={'relative'} width={'50%'}>
             <Box>
-              <Text fontSize={'3xl'} color={'white'} mt={10}>
+              <Text fontSize={'2xl'} color={'white'} mt={10}>
                 {firstParagraph}
               </Text>
-              <Text fontSize={'1xl'} color={'white'} mt={10}>
+              <Text fontSize={'2xl'} color={'white'} mt={10}>
                 {secondParagraph}
               </Text>
             </Box>
-            <Box mt={12} display={'flex'} justifyContent={'end  '}>
-              <Button variant='secondaryUnderline' size='ld' w={'fit-content'}>
+            <Box mt={12} display={'flex'} justifyContent={'end'}>
+              <Button variant='tertiaryOutline'>
                 Access to Sar-El Online Platform
               </Button>
             </Box>
