@@ -1,4 +1,4 @@
-import type { ThemeComponents } from '@chakra-ui/react'
+import { ThemeComponents } from '@chakra-ui/react'
 
 const Button: ThemeComponents['Button'] = {
   baseStyle: {
@@ -71,7 +71,7 @@ const Button: ThemeComponents['Button'] = {
       },
     },
     secondaryUnderline: {
-      borderBottom: '1px solid #0f9df7',
+      borderBottom: '1px solid #f8932d',
       color: '#fff',
       px: 0,
       letterSpacing: 1.1,
@@ -139,6 +139,20 @@ const Button: ThemeComponents['Button'] = {
       lineHeight: 'normal',
       _hover: {
         backgroundColor: '#3c4267',
+      },
+    },
+    wavy: {
+      backgroundImage: "url('/layered-peaks-haikei.svg')",
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      color: '#fff',
+      boxShadow: '0 17px 30px 0 rgba(36, 41, 74, 0.34);',
+      transition: 'color 0.5s',
+      letterSpacing: 1.1,
+      lineHeight: 'normal',
+      _hover: {
+        color: '#ed7014',
       },
     },
   },

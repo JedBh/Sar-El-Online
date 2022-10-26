@@ -1,4 +1,4 @@
-import { Box, Container, Heading } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading } from '@chakra-ui/react'
 
 const HeroWithCta: React.FC = () => {
   const hotGradient = {
@@ -66,7 +66,7 @@ const HeroWithCta: React.FC = () => {
           flexDir={'column'}
           justifyContent={'center'}
         >
-          <Box mt={20}>
+          <Flex mt={20} alignItems={'end'}>
             <Heading
               as={'h1'}
               size={'xl5'}
@@ -76,12 +76,12 @@ const HeroWithCta: React.FC = () => {
               letterSpacing={1.1}
               textTransform={'uppercase'}
             >
-              Sar-El{' '}
+              ISRAEL.
               <Box as={'span'} sx={hotGradient}>
-                Tours
+                FITs?
               </Box>
             </Heading>
-          </Box>
+          </Flex>
           <Box mt={0}>
             <Heading
               as={'h2'}
@@ -92,11 +92,11 @@ const HeroWithCta: React.FC = () => {
               letterSpacing={1.1}
               textTransform={'uppercase'}
             >
-              Your{' '}
+              Discover the{' '}
               <Box as='span' sx={coldGradient}>
-                Gateway
+                FIT
               </Box>{' '}
-              to the Lands of the Bible
+              Market Growth in Israel
             </Heading>
           </Box>
         </Box>
