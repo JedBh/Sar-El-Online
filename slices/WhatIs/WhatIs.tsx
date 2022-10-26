@@ -24,31 +24,35 @@ const WhatIs: React.FC = () => {
         backgroundSize={'cover'}
         backgroundImage={"url('/blob-scene-haikei.svg')"}
       >
-        <Flex justifyContent={'center'}>
-          <Grid m={22} p={8} templateColumns='repeat(2, 1fr)' gap={2}>
-            <GridItem>
-              <Heading
-                variant={'gradient'}
-                fontSize={'6xl'}
-                color={'white'}
-                mt={10}
-              >
-                {title}
-              </Heading>
-              <Text fontSize={'2xl'} color={'white'} mt={14} ml={10}>
-                {firstParagraph}
-              </Text>
-            </GridItem>
-            <GridItem p={12} m={30}>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
-                {secondParagraph}
-              </Text>
-              <Box mt={12} display={'flex'} justifyContent={'end'}>
-                <Button variant='wavy'>Access to Sar-El Online Platform</Button>
-              </Box>
-            </GridItem>
-          </Grid>
-        </Flex>
+        <Box>
+          <Flex justifyContent={'center'}>
+            <Grid m={22} p={8} templateColumns='repeat(2, 1fr)' gap={2}>
+              <GridItem>
+                <Heading
+                  variant={'gradient'}
+                  fontSize={'6xl'}
+                  color={'white'}
+                  mt={10}
+                >
+                  {title}
+                </Heading>
+                <Text fontSize={'2xl'} color={'white'} mt={14} ml={10}>
+                  {firstParagraph}
+                </Text>
+              </GridItem>
+              <GridItem p={12} m={30}>
+                <Text fontSize={'2xl'} color={'white'} mt={10}>
+                  {secondParagraph}
+                </Text>
+                <Box mt={12} display={'flex'} justifyContent={'end'}>
+                  <Button variant='wavy'>
+                    Access to Sar-El Online Platform
+                  </Button>
+                </Box>
+              </GridItem>
+            </Grid>
+          </Flex>
+        </Box>
       </AspectRatio>
     </>
   )
