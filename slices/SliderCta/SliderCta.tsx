@@ -96,127 +96,104 @@ const SliderCta: React.FC = () => {
     // },
   }
 
-  const arr = [
-    {
-      name: 'jedediah',
-      age: 23,
-      paragraph:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut explicabo labore repellendus consequuntur exercitationem rem earum, enim repudiandae nostrum distinctio officia porro sint ipsa dolor temporibus dolore quia consectetur reiciendis!',
-    },
-    {
-      name: 'gabriela',
-      age: 23,
-      paragraph:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut explicabo labore repellendus consequuntur exercitationem rem earum, enim repudiandae nostrum distinctio officia porro sint ipsa dolor temporibus dolore quia consectetur reiciendis!',
-    },
-    {
-      name: 'levi',
-      age: 22,
-      paragraph:
-        'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut explicabo labore repellendus consequuntur exercitationem rem earum, enim repudiandae nostrum distinctio officia porro sint ipsa dolor temporibus dolore quia consectetur reiciendis!',
-    },
-  ]
-
   return (
     <>
       <Box pos={'relative'}>
         <ParticleApp />
         <Box sx={slider}>
           <Slider {...settings} autoplay={true}>
-            {arr.map((item, i) => (
-              <Box key={i} w={400} pos='relative'>
-                <Box
-                  bgColor={'blue.500'}
-                  position='absolute'
-                  w={'100%'}
-                  h={'100%'}
-                  borderRadius={[16, 20, 24, 28, 32]}
-                  top={[3, null, 4, null, 5]}
-                ></Box>
-                <Box
-                  bgColor={'paleGreen.500'}
-                  px={{ base: 2, sm: 3, md: 4, lg: 5, xl: 6 }}
-                  py={{ base: 6, sm: 7, md: 8, lg: 9, xl: 10 }}
-                  borderRadius={[16, 20, 24, 28, 32]}
-                  pos='relative'
-                  left={[2, 3, 4, 6, 8]}
-                  zIndex={1}
-                >
-                  <Flex>
-                    <Box
-                      pos='relative'
-                      w={'fit-content'}
-                      mr={[4, 5, 6, 7, 8]}
-                      ml={[-10, -12, -14, -16, -20]}
-                      mt={[-8, -10, -12, -14, '-72px']}
-                    >
-                      <Box
-                        w={{
-                          base: '6rem',
-                          sm: '7rem',
-                          md: '8rem',
-                          lg: '9rem',
-                          xl: '10.7rem',
-                        }}
-                        h={{
-                          base: '6rem',
-                          sm: '7rem',
-                          md: '8rem',
-                          lg: '9rem',
-                          xl: '10.7rem',
-                        }}
-                        borderRadius={80}
-                        pos='relative'
-                        zIndex={1}
-                      ></Box>
-                      <Box
-                        w={{
-                          base: '6rem',
-                          sm: '7rem',
-                          md: '8rem',
-                          lg: '9rem',
-                          xl: '10.7rem',
-                        }}
-                        h={{
-                          base: '6rem',
-                          sm: '7rem',
-                          md: '8rem',
-                          lg: '9rem',
-                          xl: '10.7rem',
-                        }}
-                        borderRadius={'100%'}
-                        bgColor={'gray.500'}
-                        position='absolute'
-                        top={2}
-                        left={2}
-                      ></Box>
-                    </Box>
-                    <Flex flexDir={'column'}>
-                      <Text size={'md'} fontWeight='bold' color={'white'}>
-                        {item.name}
-                      </Text>
-                      <Text
-                        size={'xs'}
-                        fontWeight='normal'
-                        fontStyle={'italic'}
-                        color={'white'}
-                        mt={2}
-                      >
-                        {item.age}
-                      </Text>
-                    </Flex>
-                  </Flex>
-                  <Text
-                    size={'xs'}
-                    fontWeight='normal'
-                    color={'white'}
-                    mt={{ base: 2, md: 3, xl: 4 }}
+            <Box w={400} pos='relative'>
+              <Box
+                bgColor={'blue.500'}
+                position='absolute'
+                w={'100%'}
+                h={'100%'}
+                borderRadius={[16, 20, 24, 28, 32]}
+                top={[3, null, 4, null, 5]}
+              ></Box>
+              <Box
+                bgColor={'paleGreen.500'}
+                px={{ base: 2, sm: 3, md: 4, lg: 5, xl: 6 }}
+                py={{ base: 6, sm: 7, md: 8, lg: 9, xl: 10 }}
+                borderRadius={[16, 20, 24, 28, 32]}
+                pos='relative'
+                left={[2, 3, 4, 6, 8]}
+                zIndex={1}
+              >
+                <Flex>
+                  <Box
+                    pos='relative'
+                    w={'fit-content'}
+                    mr={[4, 5, 6, 7, 8]}
+                    ml={[-10, -12, -14, -16, -20]}
+                    mt={[-8, -10, -12, -14, '-72px']}
                   >
-                    {item.paragraph}
-                  </Text>
-                </Box>
+                    <Box
+                      w={{
+                        base: '6rem',
+                        sm: '7rem',
+                        md: '8rem',
+                        lg: '9rem',
+                        xl: '10.7rem',
+                      }}
+                      h={{
+                        base: '6rem',
+                        sm: '7rem',
+                        md: '8rem',
+                        lg: '9rem',
+                        xl: '10.7rem',
+                      }}
+                      borderRadius={80}
+                      pos='relative'
+                      zIndex={1}
+                    ></Box>
+                    <Box
+                      w={{
+                        base: '6rem',
+                        sm: '7rem',
+                        md: '8rem',
+                        lg: '9rem',
+                        xl: '10.7rem',
+                      }}
+                      h={{
+                        base: '6rem',
+                        sm: '7rem',
+                        md: '8rem',
+                        lg: '9rem',
+                        xl: '10.7rem',
+                      }}
+                      borderRadius={'100%'}
+                      bgColor={'gray.500'}
+                      position='absolute'
+                      top={2}
+                      left={2}
+                    ></Box>
+                  </Box>
+                  <Flex flexDir={'column'}>
+                    <Text size={'md'} fontWeight='bold' color={'white'}>
+                      name
+                    </Text>
+                    <Text
+                      size={'xs'}
+                      fontWeight='normal'
+                      fontStyle={'italic'}
+                      color={'white'}
+                      mt={2}
+                    >
+                      role
+                    </Text>
+                  </Flex>
+                </Flex>
+                <Text
+                  size={'xs'}
+                  fontWeight='normal'
+                  color={'white'}
+                  mt={{ base: 2, md: 3, xl: 4 }}
+                >
+                  description
+                </Text>
               </Box>
-            ))}
+            </Box>
           </Slider>
         </Box>
       </Box>

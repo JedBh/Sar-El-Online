@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import HeroWithCta from 'slices/HeroWithCta'
-import SliderCta from 'slices/SliderCta'
+import TextWithCta from 'slices/TextWithCta'
 
 const Home: NextPage = () => {
   return (
     <>
       <HeroWithCta />
-      <SliderCta />
+      <TextWithCta />
     </>
   )
 }

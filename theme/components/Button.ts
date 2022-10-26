@@ -71,7 +71,7 @@ const Button: ThemeComponents['Button'] = {
       },
     },
     secondaryUnderline: {
-      borderBottom: '1px solid #0f9df7',
+      borderBottom: '1px solid #f8932d',
       color: '#fff',
       px: 0,
       letterSpacing: 1.1,
