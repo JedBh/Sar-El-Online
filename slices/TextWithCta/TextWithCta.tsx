@@ -15,14 +15,15 @@ const TextWithCta: React.FC = () => {
         backgroundPosition={'center'}
         backgroundSize={'cover'}
         backgroundImage={"url('/layered-waves-haikei.svg')"}
+        mb={120}
       >
-        <Flex justifyContent={'center'}>
+        <Flex justifyContent={'center'} mt={126}>
           <Box m={22} p={8} pos={'relative'} width={'50%'}>
             <Box>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
+              <Text fontSize={'3xl'} color={'white'} mt={10}>
                 {firstParagraph}
               </Text>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
+              <Text fontSize={'3xl'} color={'white'} mt={10}>
                 {secondParagraph}
               </Text>
             </Box>
