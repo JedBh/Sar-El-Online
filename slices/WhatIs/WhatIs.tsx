@@ -39,7 +39,7 @@ const WhatIs: React.FC = () => {
             <GridItem>
               <Heading
                 variant={'gradient'}
-                fontSize={['2xl', '4xl', null, '6xl']}
+                fontSize={['2xl', '3xl', null, '6xl']}
                 color={'white'}
                 // mt={10}
                 textAlign={['center', null, null, 'start']}
