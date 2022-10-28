@@ -10,15 +10,20 @@ const TextWithCta: React.FC = () => {
   return (
     <>
       <AspectRatio
-        ratio={960 / 360}
+        ratio={[100 / 480, 130 / 200, 260 / 400, 460 / 560, 960 / 560]}
         backgroundRepeat={'no-repeat'}
         backgroundPosition={'center'}
         backgroundSize={'cover'}
         backgroundImage={"url('/layered-waves-haikei.svg')"}
         mb={120}
       >
-        <Flex justifyContent={'center'} mt={126}>
-          <Box m={22} p={8} pos={'relative'} width={'50%'}>
+        <Flex justifyContent={'center'} mt={20}>
+          <Box
+            m={12}
+            p={8}
+            pos={'relative'}
+            width={['100%', '100%', '85%', '75%', '70%']}
+          >
             <Box>
               <Text fontSize={'3xl'} color={'white'} mt={10}>
                 {firstParagraph}
