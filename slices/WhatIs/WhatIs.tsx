@@ -7,6 +7,7 @@ import {
   Heading,
   Text,
 } from '@chakra-ui/react'
+import Link from 'next/link'
 // import Blob from 'components/Blob'
 
 const WhatIs: React.FC = () => {
@@ -66,10 +67,17 @@ const WhatIs: React.FC = () => {
               >
                 {secondParagraph}
               </Text>
-              <Box mt={12} display={'flex'} justifyContent={'end'}>
-                <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
-                  Access to Sar-El Online Platform
-                </Button>
+              <Box
+                mt={12}
+                mb={6}
+                display={'flex'}
+                justifyContent={['center', null, null, 'end']}
+              >
+                <Link href={'https://b2b-sarel.travelbooster.com'}>
+                  <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
+                    Access to Sar-El Online Platform
+                  </Button>
+                </Link>
               </Box>
             </GridItem>
           </Grid>

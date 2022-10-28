@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Text } from '@chakra-ui/react'
+import Link from 'next/link'
 
 const TextWithCta: React.FC = () => {
   const firstParagraph =
@@ -39,9 +40,11 @@ const TextWithCta: React.FC = () => {
               </Text>
             </Box>
             <Box mt={12} display={'flex'} justifyContent={'end'}>
-              <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
-                Access to Sar-El Online Platform
-              </Button>
+              <Link href={'https://b2b-sarel.travelbooster.com'}>
+                <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
+                  Access to Sar-El Online Platform
+                </Button>
+              </Link>
             </Box>
           </Box>
         </Flex>
