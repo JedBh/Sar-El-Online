@@ -96,7 +96,7 @@ const HeroWithCta: React.FC = () => {
               <Box as='span' sx={coldGradient}>
                 FIT
               </Box>{' '}
-              Market Growth in Israel
+              Market Growth in Israel with Sar-El online
             </Heading>
           </Box>
         </Box>

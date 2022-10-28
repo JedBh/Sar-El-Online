@@ -49,7 +49,7 @@ const ImageAd: React.FC = () => {
                   target={'_blank'}
                   _hover={{ textDecoration: 'none' }}
                 >
-                  <Button variant={'primaryOutline'}>Read More</Button>
+                  <Button variant={'primaryOutline'}>More Information</Button>
                 </Link>
               </Flex>
             </Box>
@@ -78,7 +78,7 @@ const ImageAd: React.FC = () => {
                   target={'_blank'}
                   _hover={{ textDecoration: 'none' }}
                 >
-                  <Button variant={'primaryOutline'}>Read More</Button>
+                  <Button variant={'primaryOutline'}>More Information</Button>
                 </Link>
               </Flex>
             </Box>

@@ -15,8 +15,8 @@ const Home: NextPage = () => {
           <ParticleApp />
           <HeroWithCta />
           <TextWithCta />
-          <WhatIs />
           <ImageAd />
+          <WhatIs />
         </Box>
       </Layout>
     </>

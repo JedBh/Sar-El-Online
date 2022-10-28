@@ -13,11 +13,11 @@ const TextWithCta: React.FC = () => {
         backgroundRepeat={'no-repeat'}
         backgroundPosition={'center'}
         backgroundSize={'cover'}
-        backgroundImage={"url('/layered-waves-haikei.svg')"}
+        // backgroundImage={"url('/layered-waves-haikei.svg')"}
       >
         <Flex justifyContent={'center'} mb={102}>
           <Box
-            mt={[null, null, null, 302]}
+            mt={[null, null, null, 82]}
             p={8}
             pos={'relative'}
             width={['100%', '100%', '85%', '75%', '70%']}
@@ -39,12 +39,7 @@ const TextWithCta: React.FC = () => {
               </Text>
             </Box>
             <Box mt={12} display={'flex'} justifyContent={'end'}>
-              <Button
-                variant='tertiaryOutline'
-                fontSize={['1xl', null, null, '2xl']}
-              >
-                Access to Sar-El Online Platform
-              </Button>
+              <Button variant='wavy'>Access to Sar-El Online Platform</Button>
             </Box>
           </Box>
         </Flex>

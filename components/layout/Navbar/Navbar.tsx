@@ -10,6 +10,7 @@ import {
   DrawerFooter,
   DrawerOverlay,
   Flex,
+  Link,
   useDisclosure,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
-
+  const copyrightText = `Copyright ${new Date().getFullYear()} Sar-El Group`
   return (
     <Box>
       <Box
@@ -78,14 +79,55 @@ const Navbar: React.FC = () => {
                     boxShadow: 'none',
                   }}
                 />
-                <DrawerBody top={133}></DrawerBody>
+                <DrawerBody top={133}>
+                  <Box mt={12}>
+                    <Link
+                      as={'a'}
+                      target={'_blank'}
+                      href='https://sareltours.com'
+                      fontSize={'lg'}
+                      color={'blue.500'}
+                      fontWeight='normal'
+                      opacity={0.8}
+                      _hover={{
+                        opacity: '1',
+                        fontWeight: 'medium',
+                        textDecoration: 'none',
+                      }}
+                      mb={3}
+                      display={'block'}
+                    >
+                      Sar-El Tours & Conferences
+                    </Link>
+                    <Link
+                      as={'a'}
+                      target={'_blank'}
+                      href='https://sarel.group'
+                      fontSize={'lg'}
+                      color={'blue.500'}
+                      fontWeight='normal'
+                      opacity={0.8}
+                      _hover={{
+                        opacity: '1',
+                        fontWeight: 'medium',
+                        textDecoration: 'none',
+                      }}
+                      mb={3}
+                      display={'block'}
+                    >
+                      Sar-El Group
+                    </Link>
+                  </Box>
+                </DrawerBody>
 
                 <DrawerFooter
                   borderTopWidth='1px'
                   justifyContent={'flex-start'}
                   flexDirection='column'
                   alignItems={'flex-start'}
-                ></DrawerFooter>
+                >
+                  {copyrightText}
+                </DrawerFooter>
               </DrawerContent>
             </Drawer>
             <Flex
