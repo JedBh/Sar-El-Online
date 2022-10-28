@@ -39,7 +39,9 @@ const TextWithCta: React.FC = () => {
               </Text>
             </Box>
             <Box mt={12} display={'flex'} justifyContent={'end'}>
-              <Button variant='wavy'>Access to Sar-El Online Platform</Button>
+              <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
+                Access to Sar-El Online Platform
+              </Button>
             </Box>
           </Box>
         </Flex>

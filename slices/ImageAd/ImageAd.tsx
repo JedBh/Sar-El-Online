@@ -12,7 +12,7 @@ import Image from 'next/image'
 const ImageAd: React.FC = () => {
   return (
     <>
-      <Flex justifyContent={'center'} mt={130} mb={62} pb={32} pt={54}>
+      <Flex justifyContent={'center'} mt={90} mb={62} pb={32} pt={54}>
         <Heading color={'#fff'} fontSize={['2xl', '3xl', null, '5xl']}>
           Our Latest Deals
         </Heading>
@@ -56,21 +56,20 @@ const ImageAd: React.FC = () => {
           </GridItem>
           <GridItem>
             <Box pos={'relative'}>
-              <Link href={'https://sareltours.com'} target={'_blank'}>
-                <Image
-                  src={
-                    'https://res.cloudinary.com/ddinaig4n/image/upload/v1666954021/SarElLanding/Tel-Aviv_eovenw.png'
-                  }
-                  alt={'Tel Aviv Deal'}
-                  width={1350}
-                  height={900}
-                  layout={'responsive'}
-                  objectFit={'cover'}
-                  style={{
-                    borderRadius: '12px 5px 4px 20px',
-                  }}
-                />
-              </Link>
+              <Image
+                src={
+                  'https://res.cloudinary.com/ddinaig4n/image/upload/v1666954021/SarElLanding/Tel-Aviv_eovenw.png'
+                }
+                alt={'Tel Aviv Deal'}
+                width={1350}
+                height={900}
+                layout={'responsive'}
+                objectFit={'cover'}
+                style={{
+                  borderRadius: '12px 5px 4px 20px',
+                }}
+              />
+
               <Flex justifyContent={'center'} m={4}>
                 <Link
                   as={'a'}
