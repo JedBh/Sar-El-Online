@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Button, Flex, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Text } from '@chakra-ui/react'
 
 const TextWithCta: React.FC = () => {
   const firstParagraph =
@@ -9,20 +9,32 @@ const TextWithCta: React.FC = () => {
 
   return (
     <>
-      <AspectRatio
-        ratio={960 / 360}
+      <Box
         backgroundRepeat={'no-repeat'}
         backgroundPosition={'center'}
         backgroundSize={'cover'}
         backgroundImage={"url('/layered-waves-haikei.svg')"}
       >
-        <Flex justifyContent={'center'}>
-          <Box m={22} p={8} pos={'relative'} width={'50%'}>
+        <Flex justifyContent={'center'} mb={102}>
+          <Box
+            mt={[null, null, null, 302]}
+            p={8}
+            pos={'relative'}
+            width={['100%', '100%', '85%', '75%', '70%']}
+          >
             <Box>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
+              <Text
+                fontSize={['2xl', null, null, '3xl']}
+                color={'white'}
+                mt={10}
+              >
                 {firstParagraph}
               </Text>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
+              <Text
+                fontSize={['2xl', null, null, '3xl']}
+                color={'white'}
+                mt={10}
+              >
                 {secondParagraph}
               </Text>
             </Box>
@@ -33,7 +45,7 @@ const TextWithCta: React.FC = () => {
             </Box>
           </Box>
         </Flex>
-      </AspectRatio>
+      </Box>
     </>
   )
 }
