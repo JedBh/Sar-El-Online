@@ -17,27 +17,53 @@ const WhatIs: React.FC = () => {
     'You can now serve your new and existing FIT clients with a click of a button! Register at …… and grow your business with Sar-El Online.'
   return (
     <>
-      <Box pos={'relative'} mt={260}>
+      <Box
+        pos={'relative'}
+        /* mt={260} */
+      >
         <Box pos={'absolute'} zIndex={-1} width={'85%'} top={332}>
           <Blob />
         </Box>
         <Flex justifyContent={'center'}>
-          <Grid m={22} p={8} templateColumns='repeat(2, 1fr)' gap={2}>
+          <Grid
+            templateColumns={[
+              'repeat(1, 1fr)',
+              null,
+              'repeat(1, 1fr)',
+              null,
+              'repeat(1, 1fr)',
+            ]}
+            gap={2}
+            m={[0, 6, null, 12]}
+          >
             <GridItem>
               <Heading
                 variant={'gradient'}
-                fontSize={'6xl'}
+                fontSize={['2xl', '4xl', null, '6xl']}
                 color={'white'}
-                mt={10}
+                // mt={10}
+                textAlign={['center', null, null, 'start']}
               >
                 {title}
               </Heading>
-              <Text fontSize={'2xl'} color={'white'} mt={14} ml={10}>
+              <Text
+                fontSize={['2xl']}
+                color={'white'}
+                mt={14}
+                ml={10}
+                width={['75%', '85%', '75%', '70%']}
+              >
                 {firstParagraph}
               </Text>
             </GridItem>
-            <GridItem p={12} m={30}>
-              <Text fontSize={'2xl'} color={'white'} mt={10}>
+            <GridItem>
+              <Text
+                fontSize={['2xl']}
+                color={'white'}
+                mt={10}
+                ml={10}
+                width={['75%', '85%', '75%', '70%']}
+              >
                 {secondParagraph}
               </Text>
               <Box mt={12} display={'flex'} justifyContent={'end'}>
