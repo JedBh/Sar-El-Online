@@ -13,7 +13,7 @@ const ImageAd: React.FC = () => {
   return (
     <>
       <Flex justifyContent={'center'} mt={130} mb={62} pb={32} pt={54}>
-        <Heading color={'#fff'} fontSize={'5xl'}>
+        <Heading color={'#fff'} fontSize={['2xl', '3xl', null, '5xl']}>
           Our Latest Deals
         </Heading>
       </Flex>
