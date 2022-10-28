@@ -1,4 +1,12 @@
-import { Box, Flex, Grid, GridItem, Heading } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Flex,
+  Grid,
+  GridItem,
+  Heading,
+  Link,
+} from '@chakra-ui/react'
 import Image from 'next/image'
 
 const ImageAd: React.FC = () => {
@@ -32,23 +40,47 @@ const ImageAd: React.FC = () => {
                 height={900}
                 layout={'responsive'}
                 objectFit={'cover'}
-                style={{ borderRadius: 4 }}
+                style={{ borderRadius: '12px 5px 4px 20px' }}
               />
+              <Flex justifyContent={'center'} m={4}>
+                <Link
+                  as={'a'}
+                  href={'https://sareltours.com'}
+                  target={'_blank'}
+                  _hover={{ textDecoration: 'none' }}
+                >
+                  <Button variant={'primaryOutline'}>Read More</Button>
+                </Link>
+              </Flex>
             </Box>
           </GridItem>
           <GridItem>
             <Box pos={'relative'}>
-              <Image
-                src={
-                  'https://res.cloudinary.com/ddinaig4n/image/upload/v1666954021/SarElLanding/Tel-Aviv_eovenw.png'
-                }
-                alt={'Tel Aviv Deal'}
-                width={1350}
-                height={900}
-                layout={'responsive'}
-                objectFit={'cover'}
-                style={{ borderRadius: 4 }}
-              />
+              <Link href={'https://sareltours.com'} target={'_blank'}>
+                <Image
+                  src={
+                    'https://res.cloudinary.com/ddinaig4n/image/upload/v1666954021/SarElLanding/Tel-Aviv_eovenw.png'
+                  }
+                  alt={'Tel Aviv Deal'}
+                  width={1350}
+                  height={900}
+                  layout={'responsive'}
+                  objectFit={'cover'}
+                  style={{
+                    borderRadius: '12px 5px 4px 20px',
+                  }}
+                />
+              </Link>
+              <Flex justifyContent={'center'} m={4}>
+                <Link
+                  as={'a'}
+                  href={'https://sareltours.com'}
+                  target={'_blank'}
+                  _hover={{ textDecoration: 'none' }}
+                >
+                  <Button variant={'primaryOutline'}>Read More</Button>
+                </Link>
+              </Flex>
             </Box>
           </GridItem>
         </Grid>
