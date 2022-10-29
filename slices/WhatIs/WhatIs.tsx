@@ -75,7 +75,7 @@ const WhatIs: React.FC = () => {
               >
                 <Link href={'https://b2b-sarel.travelbooster.com'}>
                   <Button variant='wavy' fontSize={['1xl', '1xl', null, '3xl']}>
-                    Access to Sar-El Online Platform
+                    Access The Sar-El Online Platform
                   </Button>
                 </Link>
               </Box>

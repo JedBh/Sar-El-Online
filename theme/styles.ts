@@ -3,7 +3,7 @@ import { Styles } from '@chakra-ui/theme-tools'
 const styles: Styles = {
   global: () => ({
     body: {
-      backgroundColor: 'black.500',
+      backgroundColor: 'blue.900',
       fontFamily: 'PPNeueMontreal',
     },
     h2: {

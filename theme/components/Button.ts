@@ -152,7 +152,7 @@ const Button: ThemeComponents['Button'] = {
       letterSpacing: 1.1,
       lineHeight: 'normal',
       _hover: {
-        color: '#ed7014',
+        color: 'blue.900',
       },
     },
   },
