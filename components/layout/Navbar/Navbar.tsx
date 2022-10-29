@@ -13,8 +13,10 @@ import {
   Link,
   useDisclosure,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { useEffect, useState } from 'react'
+import NextLink from 'next/link'
 import React from 'react'
 
 const Navbar: React.FC = () => {
@@ -56,6 +58,19 @@ const Navbar: React.FC = () => {
           transition='all 0.4s ease'
         >
           <Flex flexDirection={'row'} alignItems={'center'}>
+            <Box pos={'relative'} w={[176, 216, null, 256, null]}>
+              <NextLink href={'/'} passHref scroll={false}>
+                <Link>
+                  <Image
+                    src={'/logo-sarelonline.svg'}
+                    alt={'sarel-online-logo'}
+                    width={300}
+                    height={80}
+                    layout={'responsive'}
+                  />
+                </Link>
+              </NextLink>
+            </Box>
             <Flex
               flex={1}
               alignItems={'center'}
