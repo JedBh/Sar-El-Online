@@ -1,7 +1,6 @@
 import {
   Box,
   Button,
-  Container,
   Divider,
   Drawer,
   DrawerBody,
@@ -53,19 +52,19 @@ const Navbar: React.FC = () => {
         pb={scrollPosition > 1 ? [3, null, 4, null, 5] : [6, 7, 8, 9, 10]}
       >
         <Divider opacity={scrollPosition > 1 ? 0.1 : 0} />
-        <Container
+        <Box
           pt={scrollPosition > 1 ? [3, null, 4, null, 5] : [6, 7, 8, 9, 10]}
           transition='all 0.4s ease'
         >
           <Flex flexDirection={'row'} alignItems={'center'}>
-            <Box pos={'relative'} w={[176, 216, null, 256, null]}>
+            <Box pos={'relative'} w={[176, 216, null, 256, 256]}>
               <NextLink href={'/'} passHref scroll={false}>
                 <Link>
                   <Image
                     src={'/logo-sarelonline.svg'}
                     alt={'sarel-online-logo'}
-                    width={300}
-                    height={80}
+                    width={280}
+                    height={90}
                     layout={'responsive'}
                   />
                 </Link>
@@ -152,7 +151,7 @@ const Navbar: React.FC = () => {
               display={{ base: 'none', lg: 'flex' }}
             ></Flex>
           </Flex>
-        </Container>
+        </Box>
       </Box>
     </Box>
   )
