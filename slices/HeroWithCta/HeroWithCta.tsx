@@ -74,11 +74,11 @@ const HeroWithCta: React.FC = () => {
               fontWeight={'bold'}
               lineHeight={0.99}
               letterSpacing={1.1}
-              textTransform={'uppercase'}
+              // textTransform={'uppercase'}
             >
               ISRAEL.
               <Box as={'span'} sx={hotGradient}>
-                FITs?
+                FIT&apos;s?
               </Box>
             </Heading>
           </Flex>

@@ -10,7 +10,7 @@ const SEO: React.FC<TypeSEO> = ({
 }) => {
   // const url = `${layout.seoUrl}${path}`
 
-  const url = `https://sarellanding.com${path}`
+  const url = `https://sarelonline.com${path}`
 
   return (
     <NextSeo
