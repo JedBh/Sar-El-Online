@@ -24,7 +24,7 @@ const ImageAd: React.FC = () => {
             'repeat(1, 1fr)',
             'repeat(1, 1fr)',
             'repeat(1, 1fr)',
-            'repeat(2, 1fr)',
+            'repeat(3, 1fr)',
           ]}
           gap={[6, 7, 8, 9, 100]}
           justifyContent={'center'}
@@ -45,7 +45,36 @@ const ImageAd: React.FC = () => {
               <Flex justifyContent={'center'} m={4}>
                 <Link
                   as={'a'}
-                  href={'https://sareltours.com'}
+                  href={
+                    'https://b2b-sarel.travelbooster.com/UI_NET/LoginAgent.aspx'
+                  }
+                  target={'_blank'}
+                  _hover={{ textDecoration: 'none' }}
+                >
+                  <Button variant={'primaryOutline'}>More Information</Button>
+                </Link>
+              </Flex>
+            </Box>
+          </GridItem>
+          <GridItem>
+            <Box pos={'relative'}>
+              <Image
+                src={
+                  'https://res.cloudinary.com/ddinaig4n/image/upload/v1667710033/SarElLanding/Netanya_mkejhl.png'
+                }
+                alt={'Netanya Deal'}
+                width={1350}
+                height={900}
+                layout={'responsive'}
+                objectFit={'cover'}
+                style={{ borderRadius: '12px 5px 4px 20px' }}
+              />
+              <Flex justifyContent={'center'} m={4}>
+                <Link
+                  as={'a'}
+                  href={
+                    'https://b2b-sarel.travelbooster.com/UI_NET/LoginAgent.aspx'
+                  }
                   target={'_blank'}
                   _hover={{ textDecoration: 'none' }}
                 >
@@ -73,7 +102,9 @@ const ImageAd: React.FC = () => {
               <Flex justifyContent={'center'} m={4}>
                 <Link
                   as={'a'}
-                  href={'https://sareltours.com'}
+                  href={
+                    'https://b2b-sarel.travelbooster.com/UI_NET/LoginAgent.aspx'
+                  }
                   target={'_blank'}
                   _hover={{ textDecoration: 'none' }}
                 >
