@@ -6,6 +6,8 @@ import {
   ModalBody,
   useDisclosure,
   Container,
+  Heading,
+  Flex,
 } from '@chakra-ui/react'
 import React from 'react'
 
@@ -17,12 +19,16 @@ const Video: React.FC = () => {
 
   return (
     <Container my={[10, 12, 14, 16, 20]}>
+      <Flex justifyContent={'center'} mt={90} mb={62} pb={32} pt={54}>
+        <Heading color={'#fff'} fontSize={['2xl', '3xl', null, '5xl']} mt={2}>
+          Check Out Our Video Guide
+        </Heading>
+      </Flex>
       <Box
         height={['12rem', '22rem', '28rem', '32rem', '32rem']}
         width='100%'
         bgImage={
-          'https://res.cloudinary.com/ddinaig4n/image/upload/v1651045675/sar-el_adventures/dave-herring-kONOqBwP800-unsplash_sfkxhv.jpg' ||
-          'blue.500'
+          'https://i3.ytimg.com/vi/pJdgXDVJ27Y/maxresdefault.jpg' || 'blue.500'
         }
         bgSize='cover'
         bgPos='center'

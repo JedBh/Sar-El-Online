@@ -19,7 +19,7 @@ const ImageAd: React.FC = () => {
       </Flex>
       <Flex justifyContent={'center'} mt={12} mb={32}>
         <Grid
-          w={'75%'}
+          w={'90%'}
           templateColumns={[
             'repeat(1, 1fr)',
             'repeat(1, 1fr)',
